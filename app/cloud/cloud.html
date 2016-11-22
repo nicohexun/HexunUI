@@ -1,312 +1,781 @@
 <div class="main-container">
-    <header class="header header-6">
-        ...
-    </header>
-    <nav class="subnav">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/workspace/dashboard">Dashboard</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/workspace/management">Management</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [class.active]="isactive" (click)="setActive('cloud')" routerLink="/workspace/cloud">Cloud</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/workspace/tenants">Tenants</a>
-            </li>
-        </ul>
-    </nav>
+
+    <nav-component></nav-component>
+
+    <subnav-component></subnav-component>
+
     <div class="content-container">
+
         <div class="content-area">
+
             <table class="table">
+
                 <thead>
+
                     <tr>
+
                         <th>Decimal</th>
+
                         <th>Hexadecimal</th>
+
                         <th>Binary</th>
+
                         <th>Roman Numeral</th>
+
                     </tr>
+
                 </thead>
+
                 <tbody>
+
                     <tr>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>I</td>
+
                     </tr>
+
                     <tr>
+
                         <td>5</td>
+
                         <td>5</td>
+
                         <td>101</td>
+
                         <td>V</td>
+
                     </tr>
+
                     <tr>
+
                         <td>10</td>
+
                         <td>A</td>
+
                         <td>1010</td>
+
                         <td>X</td>
+
                     </tr>
+
                     <tr>
+
                         <td>15</td>
+
                         <td>F</td>
+
                         <td>1111</td>
+
                         <td>XV</td>
+
                     </tr>
+
                 </tbody>
+
             </table>
+
             <table class="table">
+
                 <thead>
+
                     <tr>
+
                         <th>Decimal</th>
+
                         <th>Hexadecimal</th>
+
                         <th>Binary</th>
+
                         <th>Roman Numeral</th>
+
                     </tr>
+
                 </thead>
+
                 <tbody>
+
                     <tr>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>I</td>
+
                     </tr>
+
                     <tr>
+
                         <td>5</td>
+
                         <td>5</td>
+
                         <td>101</td>
+
                         <td>V</td>
+
                     </tr>
+
                     <tr>
+
                         <td>10</td>
+
                         <td>A</td>
+
                         <td>1010</td>
+
                         <td>X</td>
+
                     </tr>
+
                     <tr>
+
                         <td>15</td>
+
                         <td>F</td>
+
                         <td>1111</td>
+
                         <td>XV</td>
+
                     </tr>
+
                 </tbody>
+
             </table>
+
             <table class="table">
+
                 <thead>
+
                     <tr>
+
                         <th>Decimal</th>
+
                         <th>Hexadecimal</th>
+
                         <th>Binary</th>
+
                         <th>Roman Numeral</th>
+
                     </tr>
+
                 </thead>
+
                 <tbody>
+
                     <tr>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>1</td>
+
                         <td>I</td>
+
                     </tr>
+
                     <tr>
+
                         <td>5</td>
+
                         <td>5</td>
+
                         <td>101</td>
+
                         <td>V</td>
+
                     </tr>
+
                     <tr>
+
                         <td>10</td>
+
                         <td>A</td>
+
                         <td>1010</td>
+
                         <td>X</td>
+
                     </tr>
+
                     <tr>
+
                         <td>15</td>
+
                         <td>F</td>
+
                         <td>1111</td>
+
                         <td>XV</td>
+
                     </tr>
+
                 </tbody>
+
             </table>
+
         </div>
+
         <nav class="sidenav">
+
             <section class="sidenav-content">
+
                 <a class="nav-link" href="/clarity/documentation">Component Status</a>
+
                 <section class="nav-group collapsible">
+
                     <input id="tab2" type="checkbox">
+
                     <label for="tab2">Patterns</label>
+
                     <ul class="nav-list">
+
                         <li><a class="nav-link active" href="/clarity/documentation/app-layout">
+
+
+
             Application Layout
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/color">
+
+
+
             Color Palette
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/iconography">
+
+
+
             Iconography
+
+
+
             
+
+
+
             <span class="updated nav-link-tag">Updated</span></a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/navigation">
+
+
+
             Navigation
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/typography">
+
+
+
             Typography
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                     </ul>
+
                 </section>
+
                 <section class="nav-group collapsible">
+
                     <input id="tab1" type="checkbox">
+
                     <label for="tab1">Components</label>
+
                     <ul class="nav-list">
+
                         <li><a class="nav-link" href="/clarity/documentation/alerts">
+
+
+
             Alerts
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/badges">
+
+
+
             Badges
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/buttons">
+
+
+
             Buttons
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/cards">
+
+
+
             Cards
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/checkboxes">
+
+
+
             Checkboxes
+
+
+
             
+
+
+
             <span class="updated nav-link-tag">Updated</span></a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/code-highlight">
+
+
+
             Code Highlight
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/datagrid">
+
+
+
             Datagrid
+
+
+
             <span class="new nav-link-tag">New!</span>
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/dropdowns">
+
+
+
             Dropdowns
+
+
+
             
+
+
+
             <span class="updated nav-link-tag">Updated</span></a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/forms">
+
+
+
             Forms (Layout)
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/grid">
+
+
+
             Grid
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/header">
+
+
+
             Header &amp; Subnav
+
+
+
             
+
+
+
             <span class="updated nav-link-tag">Updated</span></a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/input-fields">
+
+
+
             Input Fields
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/labels">
+
+
+
             Labels
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/lists">
+
+
+
             Lists
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/login">
+
+
+
             Login Page
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/modals">
+
+
+
             Modals
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/progress">
+
+
+
             Progress Bars
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/radios">
+
+
+
             Radio Buttons
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/select-boxes">
+
+
+
             Select Boxes
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/sidenav">
+
+
+
             Sidenav
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/spinners">
+
+
+
             Spinners
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/stack-view">
+
+
+
             Stack View
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/tables">
+
+
+
             Tables
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/tabs">
+
+
+
             Tabs
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/toggle-switches">
+
+
+
             Toggle Switches
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/tooltips">
+
+
+
             Tooltips
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                         <li><a class="nav-link" href="/clarity/documentation/wizards">
+
+
+
             Wizards
+
+
+
             
+
+
+
             </a>
+
                         </li>
+
                     </ul>
+
                 </section>
+
                 <a class="nav-link" href="/clarity/images/sketchTemplates/Clarity-Template-0.6.0.sketch" target="_blank">Sketch Templates</a>
+
             </section>
+
         </nav>
+
         <!--<router-outlet></router-outlet>-->
+
     </div>
+
 </div>
