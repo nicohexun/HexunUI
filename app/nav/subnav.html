@@ -1,0 +1,16 @@
+<nav class="subnav">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="isactive.dashboard" (click)="setActive('dashboard')" routerLink="/workspace/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="isactive.management" (click)="setActive('management')" routerLink="/workspace/management">Management</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="isactive.cloud" (click)="setActive('cloud')" routerLink="/workspace/cloud">Cloud</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="isactive.tenants" (click)="setActive('tenants')" routerLink="/workspace/tenants">Tenants</a>
+        </li>
+    </ul>
+</nav>

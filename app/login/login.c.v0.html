@@ -1,0 +1,29 @@
+<div class="login-wrapper">
+    <form class="login">
+        <label class="title">
+                      民航数据通信<span class="trademark">&#8482;</span>
+                      Angular2 演示&#174;
+                  </label>
+        <div class="login-group">
+            <div class="auth-source select">
+                <select id="login-auth-source-1">
+                              <option>普通用户</option>
+                              <option>管理员</option>
+                          </select>
+            </div>
+            <input class="username" type="text" id="login_username" placeholder="Username">
+            <input class="password" type="password" id="login_password" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" id="rememberme">
+                <label for="rememberme">
+                              记住
+                          </label>
+            </div>
+            <div class="error ">
+                无效的用户名或密码
+            </div>
+            <button type="submit" class="btn btn-primary">登录</button>
+            <a routerLink="/#" class="signup">注册新账号</a>
+        </div>
+    </form>
+</div>
