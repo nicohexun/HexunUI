@@ -9,7 +9,7 @@ import { SubNavComponent } from '../app/nav/subnav.component';
 import { LoginComponent } from '../app/login/login.c';
 import { HomeComponent } from '../app/home/home.c';
 import { CloudComponent } from '../app/cloud/cloud';
-import { DashboardComponent } from '../app/dashboard/dashboard';
+import { DashboardComponent, DashboardContentComponent, DashboardSideNavComponent } from '../app/dashboard/dashboard.module';
 import { ManagementComponent } from '../app/management/management';
 import { TenantsComponent } from '../app/tenants/tenants';
 import { SubNavService } from '../app/service/SubNav.s';
@@ -18,7 +18,7 @@ import { routing } from './app.routing';
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule, ClarityModule, routing],
     declarations: [
-        AppComponent, LoginComponent, HomeComponent, CloudComponent, DashboardComponent, ManagementComponent, TenantsComponent,
+        AppComponent, LoginComponent, HomeComponent, CloudComponent, DashboardComponent, DashboardContentComponent, DashboardSideNavComponent, ManagementComponent, TenantsComponent,
         NavComponent, SubNavComponent
     ],
     providers: [SubNavService],
