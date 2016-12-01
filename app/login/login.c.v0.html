@@ -1,5 +1,5 @@
 <div class="login-wrapper">
-    <form class="login">
+    <form class="login" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
         <label class="title">
                       民航数据通信<span class="trademark">&#8482;</span>
                       Angular2 演示&#174;
@@ -11,19 +11,20 @@
                               <option>管理员</option>
                           </select>
             </div>
-            <input class="username" type="text" id="login_username" placeholder="Username">
-            <input class="password" type="password" id="login_password" placeholder="Password">
+            <input class="username" type="text" ngModel name="login_username" placeholder="Username">
+            <input class="password" type="password" ngModel name="login_password" placeholder="Password">
             <div class="checkbox">
-                <input type="checkbox" id="rememberme">
-                <label for="rememberme">
-                              记住
-                          </label>
+                <input type="checkbox" id="rememberme" ngModel name="rememberme">
+                <label for="rememberme">记住</label>
             </div>
             <div class="error ">
                 无效的用户名或密码
             </div>
             <button type="submit" class="btn btn-primary">登录</button>
-            <a routerLink="/#" class="signup">注册新账号</a>
+            <a routerLink="/signup" class="signup">注册新账号</a>
         </div>
     </form>
 </div>
+<!--  表单提交时，先将form 绑定到 ngForm上 ， 然后对各个输入组件进行 ngModel 绑定 ， 传到后台 form.value 即可 
+      或者 ngControl="login_username" 也是相同的效果（需要引入 FORM_DIRECTIVE）
+ -->

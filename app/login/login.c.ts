@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['login.c.css']
 })
 export class LoginComponent {
+    onSubmit(form) {
+        console.log(form);
+    }
 }

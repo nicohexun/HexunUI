@@ -4,13 +4,15 @@ import { LoginComponent } from '../app/login/login.c'
 import { HomeComponent } from '../app/home/home.c'
 import { CloudComponent } from '../app/cloud/cloud';
 import { DashboardComponent } from '../app/dashboard/dashboard';
+import { DashboardHomeComponent } from '../app/dashboard/dashboard.home';
+import { DashboardLinkComponent } from '../app/dashboard/dashboard.link';
 import { ManagementComponent } from '../app/management/management';
 import { TenantsComponent } from '../app/tenants/tenants';
 
 const appRoutes: Routes = [
     {
         path: '',
-        redirectTo: 'workspace',
+        redirectTo: 'login',
         pathMatch: 'full'
     },
     {
@@ -22,13 +24,27 @@ const appRoutes: Routes = [
         children: [
             {
                 path: '',
-                component: DashboardComponent
+                redirectTo: 'dashboard',
+                pathMatch: 'full'
             }, {
                 path: 'cloud',
                 component: CloudComponent
             }, {
                 path: 'dashboard',
-                component: DashboardComponent
+                component: DashboardComponent,
+                children: [
+                    {
+                        path: '',
+                        redirectTo: 'home',
+                        pathMatch: 'full'
+                    }, {
+                        path: 'home',
+                        component: DashboardHomeComponent
+                    }, {
+                        path: 'link',
+                        component: DashboardLinkComponent
+                    }
+                ]
             }, {
                 path: 'management',
                 component: ManagementComponent

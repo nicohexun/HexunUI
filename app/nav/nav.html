@@ -2,12 +2,14 @@
     <div class="branding">
         <a href="javascript://" class="nav-link">
             <clr-icon shape="vm-bug"></clr-icon>
-            <span class="title">Project Clarity</span>
+            <span class="title">Project HexunUI</span>
         </a>
     </div>
     <div class="header-nav">
-        <a href="javascript://" class="active nav-link" href="javascript://"><span class="nav-text">Dashboard</span></a>
-        <a href="javascript://" class="nav-link" href="javascript://"><span class="nav-text">Interactive Analytics</span></a>
+        <a class="nav-link" [class.active]="isactive.dashboard" (click)="setActive('dashboard')" routerLink="/workspace/dashboard"><span class="nav-text">Dashboard</span></a>
+        <a class="nav-link" [class.active]="isactive.management" (click)="setActive('management')" routerLink="/workspace/management"><span class="nav-text">Management</span></a>
+        <a class="nav-link" [class.active]="isactive.cloud" (click)="setActive('cloud')" routerLink="/workspace/cloud"><span class="nav-text">Cloud</span></a>
+        <a class="nav-link" [class.active]="isactive.tenants" (click)="setActive('tenants')" routerLink="/workspace/tenants"><span class="nav-text">Tenants</span></a>
     </div>
     <div class="header-actions">
         <clr-dropdown class="dropdown bottom-right">
@@ -18,7 +20,7 @@
             <div class="dropdown-menu">
                 <a href="javascript://" clrDropdownItem>About</a>
                 <a href="javascript://" clrDropdownItem>Preferences</a>
-                <a href="javascript://" clrDropdownItem>Log out</a>
+                <a href="/login" clrDropdownItem>Log out</a>
             </div>
         </clr-dropdown>
     </div>

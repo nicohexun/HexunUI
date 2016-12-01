@@ -7,20 +7,5 @@ import { SubNavService } from '../service/SubNav.s'
     templateUrl: './subnav.html'
 })
 export class SubNavComponent {
-    isactive = {
-        dashboard: false,
-        management: false,
-        cloud: false,
-        tenants: false
-    }
-    constructor(private service: SubNavService) {
-    }
-
-    setActive(str: string) {
-        this.service.setActive(str);
-    }
-
-    ngAfterContentChecked() {
-        this.isactive = this.service.isactive;
-    }
+   
 }
