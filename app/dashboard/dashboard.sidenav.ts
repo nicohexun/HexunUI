@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
     moduleId: module.id,
     selector: 'dashboard-sidenav',
     templateUrl: './dashboard.sidenav.html',
-<<<<<<< HEAD
     styleUrls: ['./dashboard.sidenav.css']
 })
 export class DashboardSideNavComponent {
@@ -30,10 +29,4 @@ export class DashboardSideNavComponent {
             }
         }
     }
-=======
-    styles: ['./dashboard.sidenav.css']
-})
-export class DashboardSideNavComponent {
-
->>>>>>> 1b972b766d34300bfb2afd13806c9badbe9ba4a3
 }
