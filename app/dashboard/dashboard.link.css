@@ -1,0 +1,14 @@
+.color-square {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    border-radius: 4px
+}
+
+.datagrid-cell {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 12px 0 12px;
+}
