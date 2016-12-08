@@ -21,13 +21,15 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-      '@angular/material': 'npm:.2.0.0-alpha.9-3@@angular/material/material.umd.js',
-      '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+      // '@angular/material': 'npm:.2.0.0-alpha.9-3@@angular/material/material.umd.js',
+      // '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
       // other libraries
-      'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
-      'ng-lightning/ng-lightning': 'npm:ng-lightning/bundles/ng-lightning.umd.js',
+      // 'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+      // 'ng-lightning/ng-lightning': 'npm:ng-lightning/bundles/ng-lightning.umd.js',
       'clarity-angular': 'npm:clarity-angular',
-      'tether': 'npm:tether/dist/js/tether.js',
+      'angular2-highcharts': 'npm:angular2-highcharts',
+      'highcharts': 'npm:highcharts/highcharts.js',
+      // 'tether': 'npm:tether/dist/js/tether.js',
       'rxjs': 'npm:rxjs'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -40,14 +42,19 @@
         main: './index.js',
         defaultExtension: 'js'
       },
-      'rxjs': {
-        main: './bundles/Rx.js',
-        defaultExtension: 'js'
-      },
-      'angular2-in-memory-web-api': {
+      'angular2-highcharts': {
         main: './index.js',
         defaultExtension: 'js'
       },
+      'rxjs': {
+        main: './bundles/Rx.js',
+        defaultExtension: 'js'
+      }
+
+      // 'angular2-in-memory-web-api': {
+      //   main: './index.js',
+      //   defaultExtension: 'js'
+      // },
 
     }
   });

@@ -1,0 +1,11 @@
+.table td {
+    vertical-align: middle;
+}
+
+.table td {
+    padding: 0 0 0 0;
+}
+
+div.highcharts-container {
+    width: 1800px;
+}
