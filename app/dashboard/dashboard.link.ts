@@ -310,10 +310,13 @@ export class DashboardLinkComponent {
     updateConfirm(updateItem: Object) {
         let newData = [];
         this.users.filter(item => {
-            if (item == this.selectedItem)
-                newData.push(updateItem);
-            else
+            if (item == this.selectedItem) {
+                item.pokemon.name = updateItem['pokemon.name'];
                 newData.push(item);
+            }
+            else {
+                newData.push(item);
+            }
         });
         this.users = newData;
         this.opened = false;
@@ -327,4 +330,12 @@ export class DashboardLinkComponent {
         });
         this.users = newData;
     }
+}
+
+class User {
+    id: number;
+    name: string;
+    creations: string;
+    pokeman: { name: string };
+    color: string;
 }
